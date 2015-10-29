@@ -1,11 +1,15 @@
 @import 'settings';
 
+* {
+  box-sizing: border-box;
+}
+
 $columnSize: 100% / $columnsCount;
 @mixin generateColumns {
   $i: 1;
   @while $i <= $columnsCount {
     .col-#{$i} {
-      width: $columnSize;
+      width: $columnSize * $i;
     }
     $i: $i + 1;
   }
@@ -15,9 +19,13 @@ $columnSize: 100% / $columnsCount;
 .grid {
   overflow: hidden;
   width: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 [class*="col-"] {
   float: left;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @include generateColumns;
