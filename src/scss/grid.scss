@@ -1,0 +1,23 @@
+@import 'settings';
+
+$columnSize: 100% / $columnsCount;
+@mixin generateColumns {
+  $i: 1;
+  @while $i <= $columnsCount {
+    .col-#{$i} {
+      width: $columnSize;
+    }
+    $i: $i + 1;
+  }
+}
+
+/* Main grid class style */
+.grid {
+  overflow: hidden;
+  width: 100%;
+}
+
+[class*="col-"] {
+  float: left;
+}
+@include generateColumns;
