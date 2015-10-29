@@ -2,16 +2,16 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>BrandMade UI Framework</title>
+    <title>Style Kit</title>
     <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
     <main>
-        <h1>Style Guide</h1>
+        <h1>Style Kit</h1>
         <section>
             <h2>Buttons</h2>
             <div class="grid">
-                <div class="col-2">
+                <div class="col-2 preview">
                     <button class="btn btn-default">Default</button>
                 </div>
                 <pre class="col-2">
@@ -19,7 +19,7 @@
                 </pre>
             </div>
             <div class="grid">
-                <div class="col-2">
+                <div class="col-2 preview">
                     <button class="btn btn-primary">Primary</button>
                 </div>
                 <pre class="col-2">
@@ -27,26 +27,54 @@
                 </pre>
             </div>
             <div class="grid">
-                <div class="col-2">
+                <div class="col-2 preview">
                     <button class="btn" disabled>Disabled</button>
                 </div>
                 <pre class="col-2">
                     <button class="btn" disabled>Disabled</button>
+                </pre>
+            </div>
+            div class="grid">
+            <div class="col-2 preview">
+                <duv class="btn-group">
+                    <button class="btn">Button1</button>
+                    <button class="btn">Button2</button>
+                    <button class="btn">Button3</button>
+                </duv>
+            </div>
+                <pre class="col-2">
+                    <duv class="btn-group">
+                        <button class="btn">Button1</button>
+                        <button class="btn">Button2</button>
+                        <button class="btn">Button3</button>
+                    </duv>
                 </pre>
             </div>
         </section>
         <section>
             <h2>Form Controls</h2>
             <div class="grid">
-                <div class="col-2">
-                    <input type="checkbox"/>
+                <div class="col-2 preview">
+                    <input id="checkbox1" type="checkbox"/>
+                    <label for="checkbox1">Label</label>
                 </div>
                 <pre class="col-2">
-                    <input type="checkbox"/>
+                    <input id="checkbox1" type="checkbox"/>
+                    <label for="checkbox1">Label</label>
                 </pre>
             </div>
             <div class="grid">
-                <div class="col-2">
+                <div class="col-2 preview">
+                    <input disabled id="checkbox2" type="checkbox"/>
+                    <label for="checkbox2">Label</label>
+                </div>
+                <pre class="col-2">
+                    <input disabled id="checkbox2" type="checkbox"/>
+                    <label for="checkbox2">Label</label>
+                </pre>
+            </div>
+            <div class="grid">
+                <div class="col-2 preview">
                     <input type="text" placeholder="Text"/>
                 </div>
                 <pre class="col-2">
@@ -54,15 +82,43 @@
                 </pre>
             </div>
             <div class="grid">
-                <div class="col-2">
-                    <input type="radio"/>
+                <div class="col-2 preview">
+                    <input disabled type="text" placeholder="Text"/>
                 </div>
                 <pre class="col-2">
-                    <input type="radio"/>
+                    <input disabled type="text" placeholder="Text"/>
                 </pre>
             </div>
             <div class="grid">
-                <div class="col-2">
+                <div class="col-2 preview">
+                    <input name="radio" id="radio1" type="radio"/>
+                    <label for="radio1">Label</label>
+                    <input name="radio" id="radio2" type="radio"/>
+                    <label for="radio2">Label</label>
+                </div>
+                <pre class="col-2">
+                    input name="radio" id="radio1" type="radio"/>
+                    <label for="radio1">Label</label>
+                    <input name="radio" id="radio2" type="radio"/>
+                    <label for="radio2">Label</label>
+                </pre>
+            </div>
+            <div class="grid">
+                <div class="col-2 preview">
+                    <input disabled name="radio" id="radio3" type="radio"/>
+                    <label for="radio3">Label</label>
+                    <input disabled name="radio" id="radio4" type="radio"/>
+                    <label for="radio4">Label</label>
+                </div>
+                <pre class="col-2">
+                    <input disabled name="radio" id="radio3" type="radio"/>
+                    <label for="radio3">Label</label>
+                    <input disabled name="radio" id="radio4" type="radio"/>
+                    <label for="radio4">Label</label>
+                </pre>
+            </div>
+            <div class="grid">
+                <div class="col-2 preview">
                     <input type="file"/>
                 </div>
                 <pre class="col-2">
@@ -70,7 +126,15 @@
                 </pre>
             </div>
             <div class="grid">
-                <div class="col-2">
+                <div class="col-2 preview">
+                    <input disabled type="file"/>
+                </div>
+                <pre class="col-2">
+                    <input disabled type="file"/>
+                </pre>
+            </div>
+            <div class="grid">
+                <div class="col-2 preview">
                     <textarea>Text</textarea>
                 </div>
                 <pre class="col-2">
@@ -78,7 +142,15 @@
                 </pre>
             </div>
             <div class="grid">
-                <div class="col-2">
+                <div class="col-2 preview">
+                    <textarea disabled>Text</textarea>
+                </div>
+                <pre class="col-2">
+                    <textarea disabled>Text</textarea>
+                </pre>
+            </div>
+            <div class="grid">
+                <div class="col-2 preview">
                     <select>
                         <option>Item1</option>
                         <option>Item2</option>
@@ -87,6 +159,54 @@
                 </div>
                 <pre class="col-2">
                     <select>
+                        <option>Item1</option>
+                        <option>Item2</option>
+                        <option>Item3</option>
+                    </select>
+                </pre>
+            </div>
+            <div class="grid">
+                <div class="col-2 preview">
+                    <select disabled>
+                        <option>Item1</option>
+                        <option>Item2</option>
+                        <option>Item3</option>
+                    </select>
+                </div>
+                <pre class="col-2">
+                    <select disabled>
+                        <option>Item1</option>
+                        <option>Item2</option>
+                        <option>Item3</option>
+                    </select>
+                </pre>
+            </div>
+            <div class="grid">
+                <div class="col-2 preview">
+                    <select multiple>
+                        <option>Item1</option>
+                        <option>Item2</option>
+                        <option>Item3</option>
+                    </select>
+                </div>
+                <pre class="col-2">
+                    <select multiple>
+                        <option>Item1</option>
+                        <option>Item2</option>
+                        <option>Item3</option>
+                    </select>
+                </pre>
+            </div>
+            <div class="grid">
+                <div class="col-2 preview">
+                    <select disabled multiple>
+                        <option>Item1</option>
+                        <option>Item2</option>
+                        <option>Item3</option>
+                    </select>
+                </div>
+                <pre class="col-2">
+                    <select disabled multiple>
                         <option>Item1</option>
                         <option>Item2</option>
                         <option>Item3</option>
@@ -97,34 +217,56 @@
         <section>
             <h2>Lists</h2>
             <div class="grid">
-                <div class="col-2">
+                <div class="col-2 preview">
                     <ul>
                         <li>Item1</li>
                         <li>Item2</li>
-                        <li>Item3</li>
+                        <li>Item3
+                            <ul>
+                                <li>Item21</li>
+                                <li>Item22</li>
+                                <li>Item23</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <pre class="col-2">
-                    <ul>
-                        <li>Item1</li>
+                    <li>Item1</li>
                         <li>Item2</li>
-                        <li>Item3</li>
-                    </ul>
+                        <li>Item3
+                            <ul>
+                                <li>Item21</li>
+                                <li>Item22</li>
+                                <li>Item23</li>
+                            </ul>
+                        </li>
                 </pre>
             </div>
             <div class="grid">
-                <div class="col-2">
+                <div class="col-2 preview">
                     <ol>
                         <li>Item1</li>
                         <li>Item2</li>
-                        <li>Item3</li>
+                        <li>Item3
+                            <ol>
+                                <li>Item21</li>
+                                <li>Item22</li>
+                                <li>Item23</li>
+                            </ol>
+                        </li>
                     </ol>
                 </div>
                 <pre class="col-2">
                     <ol>
                         <li>Item1</li>
                         <li>Item2</li>
-                        <li>Item3</li>
+                        <li>Item3
+                            <ol>
+                                <li>Item21</li>
+                                <li>Item22</li>
+                                <li>Item23</li>
+                            </ol>
+                        </li>
                     </ol>
                 </pre>
             </div>
@@ -132,7 +274,7 @@
         <section>
             <h2>Table</h2>
             <div class="grid">
-                <div class="col-2">
+                <div class="col-2 preview">
                     <table>
                         <thead>
                             <tr>
@@ -189,7 +331,7 @@
         <section>
             <h2>Texts</h2>
             <div class="grid">
-                <div class="col-2">
+                <div class="col-2 preview">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec suscipit nisi, eu interdum augue. Ut nec augue non nibh eleifend luctus in sed erat. Fusce ut orci sed neque ultrices vulputate. Praesent pretium ultricies libero, sed vulputate risus ultricies vitae. Donec non est ac nibh volutpat tristique ut eu metus. Curabitur tincidunt pellentesque sollicitudin. Maecenas pharetra dolor vel quam eleifend, quis eleifend odio interdum.</p>
                 </div>
                 <pre class="col-2">
@@ -197,7 +339,7 @@
                 </pre>
             </div>
             <div class="grid">
-                <div class="col-2">
+                <div class="col-2 preview">
                     <h1>Heading</h1>
                 </div>
                 <pre class="col-2">
@@ -205,7 +347,7 @@
                 </pre>
             </div>
             <div class="grid">
-                <div class="col-2">
+                <div class="col-2 preview">
                     <h2>Heading</h2>
                 </div>
                 <pre class="col-2">
@@ -213,7 +355,7 @@
                 </pre>
             </div>
             <div class="grid">
-                <div class="col-2">
+                <div class="col-2 preview">
                     <h3>Heading</h3>
                 </div>
                 <pre class="col-2">
@@ -221,7 +363,7 @@
                 </pre>
             </div>
             <div class="grid">
-                <div class="col-2">
+                <div class="col-2 preview">
                     <h4>Heading</h4>
                 </div>
                 <pre class="col-2">
@@ -229,7 +371,7 @@
                 </pre>
             </div>
             <div class="grid">
-                <div class="col-2">
+                <div class="col-2 preview">
                     <h5>Heading</h5>
                 </div>
                 <pre class="col-2">
@@ -237,7 +379,7 @@
                 </pre>
             </div>
             <div class="grid">
-                <div class="col-2">
+                <div class="col-2 preview">
                     <h6>Heading</h6>
                 </div>
                 <pre class="col-2">
