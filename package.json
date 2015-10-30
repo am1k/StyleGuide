@@ -1,5 +1,5 @@
 {
-  "name": "BrainMade_UI_framework",
+  "name": "Style Kit",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "dss": "^1.0.4",
     "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
     "gulp-sass": "^2.0.4"
   }
 }

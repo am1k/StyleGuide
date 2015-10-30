@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        title Style Kit
+        link(rel="stylesheet", href="./css/index.css")
+    body
+        h1 Style Kit
+        main
+           - for (var key in data )
+               section
+                   h2 #{key.split('-').join(' ')}
+                   each item in data[key].items
+                       div(class="grid")
+                           div(class="col-4")
+                               !{item.markup}
+                           pre(class="col-4")
+                               !{escapeHTML(item.markup)}
